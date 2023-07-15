@@ -17,6 +17,19 @@ export interface Task {
   status?: TaskStatus;
   customFields?: Record<string, any>;
   lastModified?: string;
+  checklists?: Checklist[];
+}
+
+export interface Checklist {
+  id: string;
+  name: string;
+  items: ChecklistItem[];
+}
+
+export interface ChecklistItem {
+  id: string;
+  name: string;
+  completed: boolean;
 }
 
 export interface Comment {
