@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import NewTaskForm from "./NewTaskForm";
+import NewTaskForm from "../../newtaskform";
 
 export default function ButtonModalNewTaskForm() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,6 +43,7 @@ export default function ButtonModalNewTaskForm() {
           {isModalOpen && (
             <div className="fixed inset-0 bg-neutral-900/60 flex items-center justify-center">
               <div className="relative" ref={modalRef}>
+                {/* <NewTaskForm /> */}
                 <NewTaskForm />
               </div>
             </div>
