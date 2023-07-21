@@ -5,7 +5,7 @@ import useAuth from "@/hooks/useAuth";
 import { useEffect, useState } from "react";
 import { Task } from "@/types/task";
 import Notification from "@/components/notification/notification";
-import ButtonModalNewTaskForm from "@/components/forms/taskForm/newTaskForm/ButtonModalNewTaskForm";
+import ButtonModalNewTaskForm from "@/components/forms/buttonmodalnewtaskform/button/ButtonModalNewTaskForm";
 import TaskCard from "@/components/taskCard";
 
 export default function Teste() {
